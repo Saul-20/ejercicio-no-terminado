@@ -1,0 +1,240 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #14224D;
+}
+
+header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.favicon{
+    width: 200px;
+    height: 50px;
+}
+
+header nav{
+    width: 100%;
+    margin: 0 auto;
+    background: #14224D;
+    box-shadow: 0 1px 3px black;
+}
+
+.menu_bar{
+    display: none;
+}
+
+.search_button{
+    display: flex;
+    margin: 14px 14px;
+
+}
+
+.search{
+    background: #03091e;
+    border: 1px solid #03091e;
+    border-radius: 5px 0 0 5px;
+    width: 225px;
+    height: 30px;
+    color: #fff;
+    padding-left: 15px;
+    outline: none;
+}
+
+.button{
+    background: #1e319a;
+    border:1px solid #1e319a;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    font-weight: bold;
+    color: #fff;
+    }
+
+.button:hover{
+    border: #10207c;
+    background: #10207c;
+}
+
+header nav ul{
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a{
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    padding: 25px 10px;
+    display: block;
+    text-decoration: none;
+    }
+
+header nav ul li span{
+    margin-right: 10px;
+}
+
+header nav ul li a:hover{
+    background: #037E8C
+}
+
+.section-home{
+    display: flex;
+    padding: 100px 10px 100px 20px;
+    color: #fff;
+    box-shadow: 0 1px 3px black;
+    }
+
+.container-title-home{ 
+    padding: 100px 10px;
+}
+
+.title-home{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.container-home-image{
+    width: 90%;
+    max-width: 650px;
+    margin: auto 0;
+}
+
+.home-image{
+    width: 100%;
+    height: auto;
+    min-width: 400px;
+}
+
+.cards-section{
+    padding: 1%;
+    text-align: center;
+}
+
+.cards{
+    box-shadow: 1px 1px 1px 1px black;
+    background: #0f1b3f;
+    display: inline-block;
+    width: 250px;
+    height: 87px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1070px) { 
+    .section-home{
+        text-align: center;
+        display: block;
+    }
+
+    .container-home-image{
+        margin: 0 auto;
+    }
+ }
+
+@media screen and (max-width: 800px){
+    header nav{
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        position: fixed;
+    }
+
+    header nav ul li{
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    .menu_bar{
+        display: block;
+        width: 100%;
+        background: #ccc;
+    }
+
+    .search_button{
+        padding: 14px 12px;
+    }
+
+    .search{
+        display: block;
+        float: left;
+        height: 40px;
+        width: 80%;
+        border-radius: 5px 0 0 5px;
+        color: #fff;
+        background: #03091e;
+        border: 1px solid #03091e;
+        padding: 8px 0 8px 16px;
+    }
+
+    .button{
+        display: block;
+        font-weight: bold;
+        background: #1e319a;
+        border: 1px solid #1e319a;
+        border-radius: 0 5px 5px 0;
+        color: #fff;
+        cursor: pointer;
+        grid-area: button;
+        outline: none;
+        padding: 8px;
+        height: 40px;
+        width: 60px;
+    }
+
+    .button:hover{
+        border: #10207c;
+        background: #10207c;
+    }
+
+    .menu_bar .bt-menu{
+        padding: 20px;
+        display: block;
+        background: #14224D;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .menu_bar span{
+        float: right;
+        font-size: 40px;
+    }
+
+    .section-home{
+        padding: 25px auto;
+        display: block;
+    }
+
+    .container-title-home{
+        padding: 50px 0;
+    }
+    
+    .title-home{
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
+    .cards{
+        height: 60px;
+        width: 90%;
+    }
+}
